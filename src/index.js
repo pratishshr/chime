@@ -1,4 +1,4 @@
-import 'assets/sass/reset.scss';
+import 'assets/sass/base.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
