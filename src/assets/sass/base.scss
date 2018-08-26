@@ -1,0 +1,12 @@
+@import './config';
+
+a {
+  font-size: 12;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    cursor: default;
+    text-decoration: none;
+  }
+}
