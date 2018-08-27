@@ -1,12 +1,15 @@
 import React from 'react';
+import cn from 'classnames';
 import PropTypes from 'prop-types';
 
 import styles from './Header.scss';
 
-const Header = ({ title }) => <h1 className={styles.title}>{title}</h1>;
+const Header = ({ children }) => (
+  <div className={cn('row', styles.header)}>{children}</div>
+);
 
 Header.propTypes = {
-  title: PropTypes.string
+  children: PropTypes.node
 };
 
 export default Header;

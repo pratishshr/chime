@@ -66,7 +66,8 @@ module.exports = {
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
-    devtoolModuleFilenameTemplate: info => path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/')
+    devtoolModuleFilenameTemplate: info =>
+      path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/')
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -147,6 +148,7 @@ module.exports = {
           },
           {
             test: /\.css$/,
+            exclude: [/node_modules/],
             use: ExtractTextPlugin.extract({
               fallback: 'style-loader',
               use: [
@@ -160,6 +162,19 @@ module.exports = {
                 'postcss-loader'
               ]
             })
+          },
+          {
+            test: /\.css$/,
+            exclude: [/src/],
+            use: [
+              require.resolve('style-loader'),
+              {
+                loader: require.resolve('css-loader'),
+                options: {
+                  importLoaders: 1
+                }
+              }
+            ]
           },
           {
             test: /\.scss/,

@@ -1,0 +1,94 @@
+@import 'assets/sass/config.scss';
+
+.container {
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  position: fixed;
+  background: lighten($grey, 5%);
+}
+
+.player {
+  color: $white;
+  padding: 5px 50px;
+}
+
+.info {
+  display: flex;
+  padding: 3px;
+}
+
+.thumbnail {
+  border: 2px solid $white;
+
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.description {
+  margin: 5px 20px;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .channel {
+    font-size: 12px;
+  }
+}
+
+.controls {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .button {
+    color: lighten($light-grey, 20%);
+    margin: 0 12px;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .playPause {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lighten($light-grey, 20%);
+
+    &:hover {
+      border: 2px solid $white;
+    }
+  }
+}
+
+.timeline {
+  width: 500px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+
+  .timer {
+    font-size: 12px;
+    margin: 0 15px;
+  }
+}
+
+.volume {
+  width: 100px;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.volumeIcon {
+  margin-right: 20px;
+}
