@@ -2,6 +2,7 @@ import React from 'react';
 
 import Row from 'components/row';
 import Header from 'components/header';
+import Player from 'components/player';
 import Sidebar from 'components/sidebar';
 import Container from 'components/container';
 import SearchBar from 'components/search-bar';
@@ -26,6 +27,7 @@ const Dashboard = () => (
       </ListSection>
       <RecommendSection>Recommendation</RecommendSection>
     </Section>
+    <Player />
   </Container>
 );
 
