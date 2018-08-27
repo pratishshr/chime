@@ -1,10 +1,10 @@
 import React from 'react';
 import cn from 'classnames';
 
-import styles from './Row.scss';
+import styles from './SearchRow.scss';
 
-const Row = () => (
-  <div className={cn('row', styles.row)}>
+const SearchRow = () => (
+  <div className={cn('row', styles.searchRow)}>
     <div className={styles.thumbnail}>
       <img
         alt="thumbnail"
@@ -22,4 +22,4 @@ const Row = () => (
   </div>
 );
 
-export default Row;
+export default SearchRow;

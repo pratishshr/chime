@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styles from './Section.scss';
 
 const ListSection = ({ children }) => (
-  <div className={cn('col-8', styles.listSection)}>{children}</div>
+  <div className={cn('col-6', styles.listSection)}>{children}</div>
 );
 
 ListSection.propTypes = {

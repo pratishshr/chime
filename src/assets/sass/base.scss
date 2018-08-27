@@ -1,5 +1,9 @@
 @import './config';
 
+body {
+  background: $black;
+}
+
 a {
   font-size: 12;
   display: block;

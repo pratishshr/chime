@@ -1,12 +1,13 @@
 @import 'assets/sass/config.scss';
 
 .section {
+  color: $white;
+  padding-top: 100px;
   background: $black;
   margin-left: 12rem;
-  padding-top: 50px;
   padding-bottom: 90px;
 }
 
 .listSection {
-  padding: 50px 200px 0px 50px;
+  padding: 0 50px;
 }

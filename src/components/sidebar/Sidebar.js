@@ -3,37 +3,44 @@ import React, { Component } from 'react';
 
 import styles from './Sidebar.scss';
 
+import * as routes from 'constants/routes';
+
+import LinkSection from './LinkSection';
+
+const musicSection = {
+  title: 'MUSIC',
+  links: [
+    {
+      title: 'Discover',
+      to: routes.DASHBOARD
+    },
+    {
+      title: 'Search',
+      to: routes.SEARCH
+    }
+  ]
+};
+
+const playListSection = {
+  title: 'PLAYLISTS',
+  links: [
+    {
+      title: 'New playlist',
+      to: routes.DASHBOARD
+    },
+    {
+      title: 'My songs',
+      to: routes.DASHBOARD
+    }
+  ]
+};
+
 class Sidebar extends Component {
   render() {
     return (
       <div className={styles.sidebar}>
-        <div className={styles.section}>
-          <div className={styles.sectionTitle}>MUSIC</div>
-          <div className={styles.sectionBody}>
-            <div className={styles.sectionLink}>
-              <a href="blank" className={styles.link}>
-                Discover
-              </a>
-            </div>
-            <div className={styles.sectionLink}>
-              <a href="blank" className={styles.link}>
-                Search
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.section}>
-          <div className={styles.sectionTitle}>PLAYLISTS</div>
-          <div className={styles.sectionBody}>
-            <div className={styles.sectionLink}>
-              <a href="blank">New playlist</a>
-            </div>
-            <div className={styles.sectionLink}>
-              <a href="blank">Upbeat songs</a>
-            </div>
-          </div>
-        </div>
+        <LinkSection section={musicSection} />
+        <LinkSection section={playListSection} />
       </div>
     );
   }
