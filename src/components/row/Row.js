@@ -8,7 +8,7 @@ const Row = () => (
     <div className={styles.thumbnail}>
       <img
         alt="thumbnail"
-        src="https://scontent.fktm3-1.fna.fbcdn.net/v/t1.0-9/38138750_10204754062968162_8269942632046657536_n.jpg?_nc_cat=0&oh=d86b2eb446aeda6fec4339d781bab107&oe=5C076B8F"
+        src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
       />
     </div>
     <div className={cn('col', styles.info)}>

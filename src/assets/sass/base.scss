@@ -3,10 +3,10 @@
 a {
   font-size: 12;
   display: block;
+  cursor: default;
   text-decoration: none;
 
   &:hover {
-    cursor: default;
     text-decoration: none;
   }
 }
