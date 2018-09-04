@@ -1,1 +1,10 @@
-$font-family--primary: 'Roboto';
+@font-face {
+  font-family: 'Muli';
+  src:url('/fonts/Muli-Regular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-muli: 'Muli', sans-serif;
+
+$font-family--primary: $font-family-muli;

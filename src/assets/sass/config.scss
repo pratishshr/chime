@@ -1,2 +1,9 @@
 @import 'config/fonts';
 @import 'config/colors';
+
+@font-face {
+  font-family: 'Muli';
+  src:url('/fonts/Muli-Regular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
