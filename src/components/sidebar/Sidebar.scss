@@ -1,10 +1,11 @@
 @import 'assets/sass/config.scss';
 
 .sidebar {
-  width: 12rem;
+  width: 20.666667%;
   height: 100vh;
   position: fixed;
   background: $grey;
+  float: left;
 }
 
 .section {
