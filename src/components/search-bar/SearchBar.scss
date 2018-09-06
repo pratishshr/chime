@@ -1,6 +1,9 @@
 @import 'assets/sass/config.scss';
 
 .searchBar {
+  width: 300px;
+  display: inline-block;
+  float: left;
   .searchField {
     border: none;
     padding: 10px 10px 10px 36px;
