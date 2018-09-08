@@ -7,5 +7,15 @@
 }
 
 .listSection {
-  padding: 0 50px;
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+
+.QueueSection {
+  background: $white;
+  width: 28%;
+  float: right;
+  display: inline-block;
+  height: 300px;
 }

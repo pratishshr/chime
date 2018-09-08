@@ -1,12 +1,9 @@
 import React from 'react';
-import cn from 'classnames';
 import PropTypes from 'prop-types';
 
 import styles from './Section.scss';
 
-const ListSection = ({ children }) => (
-  <div className={cn('col-6', styles.listSection)}>{children}</div>
-);
+const ListSection = ({ children }) => <div className={styles.listSection}>{children}</div>;
 
 ListSection.propTypes = {
   children: PropTypes.node

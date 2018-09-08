@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SearchRow from 'components/search-row';
-import Section, { ListSection } from 'components/section';
+import Section, { ListSection, QueueSection } from 'components/section';
 
 class Search extends Component {
   render() {
@@ -10,6 +10,7 @@ class Search extends Component {
         <ListSection>
           <SearchRow />
         </ListSection>
+        <QueueSection />
       </Section>
     );
   }
