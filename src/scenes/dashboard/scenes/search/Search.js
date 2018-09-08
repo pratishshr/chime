@@ -9,6 +9,8 @@ class Search extends Component {
       <Section>
         <ListSection>
           <SearchRow />
+          <SearchRow />
+          <SearchRow />
         </ListSection>
         <QueueSection />
       </Section>
