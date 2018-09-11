@@ -2,11 +2,11 @@ import React from 'react';
 
 import styles from './User.scss';
 
-const User = ({ User }) => {
+const User = ({ user }) => {
   return (
-    <div className={styles.User}>
-      <span className={styles.userimg} />
-      <span className={styles.userinfo}>Pratish Shrestha</span>
+    <div className={styles.user}>
+      <span className={styles.userImg} />
+      <span className={styles.userInfo}>Pratish Shrestha</span>
     </div>
   );
 };
