@@ -3,9 +3,12 @@ import React from 'react';
 import styles from './Queue.scss';
 
 const Queue = () => (
-  <div className={styles.Queue}>
-    <div className={styles.play}>
-      <i className="fas fa-play-circle" />
+  <div className={styles.queue}>
+    <span className={styles.queueImg} />
+    <div className={styles.queueInfo}>
+      <h2 className={styles.queueTitle}>Charlie Puth-Attention</h2>
+      <span className={styles.queueAuthor}>Charlie Puth</span>
+      <span className={styles.queueTime}>3min 52sec</span>
     </div>
   </div>
 );

@@ -6,7 +6,7 @@ import styles from './Section.scss';
 const QueueSection = ({ children }) => (
   <div className={styles.queueSection}>
     <h1>What&apos;s Next</h1>
-    <div className={styles.listSection}>{children}</div>
+    <div>{children}</div>
   </div>
 );
 
