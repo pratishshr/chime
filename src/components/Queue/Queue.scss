@@ -34,11 +34,6 @@
       font: normal normal 12px/1.5 $font-family--primary;
     }
   }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 .clearfix {
