@@ -42,6 +42,7 @@ class Sidebar extends Component {
         <h1>CHIME</h1>
         <LinkSection section={musicSection} />
         <LinkSection section={playListSection} />
+        <div className={styles.videoWrapper} />
       </div>
     );
   }

@@ -6,7 +6,7 @@
   position: fixed;
   background: $grey;
   float: left;
-  padding: 5px 35px;
+  padding: 5px 20px;
 }
 
 .section {
@@ -43,4 +43,11 @@ h1 {
   font: normal bold 30px/1.32 $font-family--primary;
   color: $white;
   margin: 10px 0;
+}
+
+.videoWrapper {
+  width: 100%;
+  height: 150px;
+  margin: 100px 0;
+  background: $white;
 }
