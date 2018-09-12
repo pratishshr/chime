@@ -1,0 +1,53 @@
+@import 'assets/sass/config.scss';
+
+.queue {
+  border: 1px solid $white;
+  padding: 10px;
+  .queueImg {
+    height: 30px;
+    width: 30px;
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+    background-image: url('assets/images/Charlie.jpg');
+    background-size: cover; 
+  }
+
+  .queueInfo {
+    display: inline-block;
+    float: right;
+    width: 85%;
+    span {
+      display: block;
+    }
+    h2.queueTitle {
+      font: normal bold 16px/1.5 $font-family--primary;
+      margin: 0 0 8px;
+    }
+    .queueAuthor{
+      font: normal normal 14px/1.5 $font-family--primary;
+    }
+    .queueTime {
+      opacity: 0.8;
+      font: normal normal 12px/1.5 $font-family--primary;
+    }
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

@@ -1,23 +1,23 @@
 import React from 'react';
-import cn from 'classnames';
 
 import styles from './SearchRow.scss';
 
 const SearchRow = () => (
-  <div className={cn('row', styles.searchRow)}>
-    <div className={styles.thumbnail}>
-      <img
-        alt="thumbnail"
-        src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
-      />
+  <div className={styles.searchRow}>
+    <div className={styles.play}>
+      <i className="fas fa-play-circle" />
     </div>
-    <div className={cn('col', styles.info)}>
-      <div className={styles.title}>Feel Good Inc</div>
-      <div className={styles.channel}>Demon Days</div>
-    </div>
-    <div className={styles.time}>3:43</div>
-    <div className={styles.options}>
-      <i className="fas fa-plus" />
+    <div className={styles.searchContent}>
+      <div className={styles.thumbnail}>
+        <img alt="thumbnail" src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png" />
+        <span className={styles.title}>Feel Good Inc</span>
+      </div>
+      <div className={styles.artist}>Demon Days</div>
+      <div className={styles.album}>Album name</div>
+      <div className={styles.time}>3:43</div>
+      <div className={styles.options}>
+        <i className="fas fa-ellipsis-h" />
+      </div>
     </div>
   </div>
 );

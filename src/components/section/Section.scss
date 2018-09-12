@@ -2,12 +2,21 @@
 
 .section {
   color: $white;
-  padding-top: 100px;
+  padding: 100px 30px 90px;
   background: $black;
-  margin-left: 12rem;
-  padding-bottom: 90px;
 }
 
 .listSection {
-  padding: 0 50px;
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+
+.queueSection {
+  width: 28%;
+  float: right;
+  display: inline-block;
+  h1 {
+    font: normal bold 20px/1.5 $font-family--primary;
+  }
 }

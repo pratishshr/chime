@@ -5,12 +5,14 @@
   margin: 0;
   padding: 0;
   height: 70px;
+  width: 100%;
   position: fixed;
   background: lighten($grey, 5%);
 }
 
 .player {
   color: $white;
+  display: flex;
   padding: 5px 50px;
 }
 

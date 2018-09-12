@@ -2,15 +2,29 @@
 
 body {
   background: $black;
+  font-family: $font-family--primary;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  font-size: 12;
+  font-size: 16px;
   display: block;
   cursor: default;
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
   }
 }

@@ -39,6 +39,7 @@ class Sidebar extends Component {
   render() {
     return (
       <div className={styles.sidebar}>
+        <h1>CHIME</h1>
         <LinkSection section={musicSection} />
         <LinkSection section={playListSection} />
       </div>

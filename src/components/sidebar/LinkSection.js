@@ -8,15 +8,15 @@ const LinkSection = ({ section }) => {
   return (
     <div className={styles.section}>
       <div className={styles.sectionTitle}>{section.title}</div>
-      <div className={styles.sectionBody}>
+      <ul className={styles.sectionBody}>
         {section.links.map((link, index) => (
-          <div key={index} className={styles.sectionLink}>
+          <li key={index} className={styles.sectionLink}>
             <Link to={link.to} className={styles.link}>
               {link.title}
             </Link>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

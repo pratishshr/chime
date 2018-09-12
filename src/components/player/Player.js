@@ -6,14 +6,11 @@ import styles from './Player.scss';
 import Slider from 'components/slider';
 
 const Player = () => (
-  <div className={cn('container-fluid', styles.container)}>
-    <div className={cn('row', styles.player)}>
+  <div className={styles.container}>
+    <div className={styles.player}>
       <div className={cn(styles.info)}>
         <div className={styles.thumbnail}>
-          <img
-            alt="cover art"
-            src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
-          />
+          <img alt="cover art" src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png" />
         </div>
         <div className={styles.description}>
           <div className={styles.title}>Feel Good Inc</div>
