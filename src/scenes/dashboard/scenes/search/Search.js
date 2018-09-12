@@ -15,6 +15,11 @@ class Search extends Component {
         </ListSection>
         <QueueSection>
           <Queue />
+          <Queue />
+          <Queue />
+          <Queue />
+          <Queue />
+          <Queue />
         </QueueSection>
       </Section>
     );

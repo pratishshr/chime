@@ -24,4 +24,6 @@
 .queueWrapper {
   border: 1px solid $white;
   padding: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
 }
