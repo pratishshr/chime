@@ -1,8 +1,7 @@
 @import 'assets/sass/config.scss';
 
 .queue {
-  border: 1px solid $white;
-  padding: 10px;
+  border-bottom: 1px solid rgba($light-grey, 0.4);
   .queueImg {
     height: 30px;
     width: 30px;

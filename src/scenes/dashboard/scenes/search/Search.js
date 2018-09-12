@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SearchRow from 'components/search-row';
-import Queue from 'components/Queue';
+import Queue from 'components/queue';
 import Section, { ListSection, QueueSection } from 'components/section';
 
 class Search extends Component {
