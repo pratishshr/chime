@@ -1,6 +1,8 @@
 @import 'assets/sass/config.scss';
 
 .queue {
+  border: 1px solid $white;
+  padding: 10px;
   .queueImg {
     height: 30px;
     width: 30px;
@@ -31,5 +33,21 @@
       opacity: 0.8;
       font: normal normal 12px/1.5 $font-family--primary;
     }
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
   }
 }

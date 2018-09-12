@@ -18,7 +18,7 @@ a {
   }
 }
 
-@mixin clearfix() {
+.clearfix {
   &:before,
   &:after {
     content: " "; // 1
